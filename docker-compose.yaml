@@ -3,14 +3,14 @@ version: '3'
 services:
   number-generator:
     build:
-      context: ./generator
+      context: ./app/generator
       dockerfile: Dockerfile.generator
     volumes:
       - numbers-volume:/app
 
   number-sorter:
     build:
-      context: ./sorter
+      context: ./app/sorter
       dockerfile: Dockerfile.sorter
     volumes:
       - numbers-volume:/app

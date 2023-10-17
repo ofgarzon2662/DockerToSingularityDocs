@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  number-generator:
+    build:
+      context: ./generator
+      dockerfile: Dockerfile.generator
+    volumes:
+      - numbers-volume:/app
+
+  number-sorter:
+    build:
+      context: ./sorter
+      dockerfile: Dockerfile.sorter
+    volumes:
+      - numbers-volume:/app
+    depends_on:
+      - number-generator
+
+volumes:
+  numbers-volume:

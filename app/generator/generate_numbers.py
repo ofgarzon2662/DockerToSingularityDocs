@@ -14,4 +14,8 @@ if __name__ == "__main__":
         except ValueError:
             print("The provided argument is not a valid number.")
     else:
-        print("Please provide a number as an argument.")
+        try:
+            count = 100000
+            generate_numbers("input.txt", count)
+        except ValueError:
+            print("The provided argument is not a valid number.")

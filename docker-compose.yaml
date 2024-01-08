@@ -18,4 +18,4 @@ services:
       - number-generator
 
 volumes:
-  numbers-volume:
+    numbers-volume:

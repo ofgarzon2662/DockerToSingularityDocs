@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import random
 import sys
 
@@ -18,4 +20,4 @@ if __name__ == "__main__":
             count = 100000
             generate_numbers("input.txt", count)
         except ValueError:
-            print("The provided argument is not a valid number.")
+            print("An error occurred while generating the file.")

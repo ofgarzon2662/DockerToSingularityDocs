@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: hpl-container
-      image: ofgarzon2662/hpl_docker_image
+      image: your_repo_name/new_hpl_docker_image
       resources:
         limits:
           memory: 100Mi
